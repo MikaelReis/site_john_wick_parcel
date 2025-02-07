@@ -1,0 +1,44 @@
+@use 'variables';
+@use 'hero';
+@use 'componentes/buttons';
+@use 'event';
+@use 'saga';
+@use 'faq';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: variables.$textColor;
+    list-style: none;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+body {
+    background-color: variables.$secondaryTextColor;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px){
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px){
+        max-width: 90%;
+    }
+}
+
+footer {
+    background-color: variables.$secondaryTextColor;
+    text-align: center;
+    font: 40px;
+}
